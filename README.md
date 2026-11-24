@@ -43,7 +43,7 @@ En el archivo `.env`:
 ```env
 # Para usar TU servicio personalizado (recomendado)
 USE_CUSTOM_WHISPER=true
-CUSTOM_WHISPER_URL=https://whisper-service-gpu-eu-877641582061.us-central1.run.app/transcribe
+CUSTOM_WHISPER_URL=https://<tu-servicio-whisper>/transcribe
 
 # Para usar OpenAI Whisper como alternativa
 USE_CUSTOM_WHISPER=false
@@ -99,9 +99,9 @@ python-api-project/
 
 ### Información de conexión:
 
-- **Host:** 136.113.227.213:3306
-- **Usuario:** signalinkUser
-- **Contraseña:** U4d32025!
+- **Host:** <DB_HOST>:3306
+- **Usuario:** <DB_USER>
+- **Contraseña:** <DB_PASSWORD>
 - **Base de datos:** signalink
 
 ### Tabla de usuarios:
@@ -294,10 +294,10 @@ python test_api.py
 
 | Variable    | Descripción         | Valor por defecto    |
 | ----------- | ------------------- | -------------------- |
-| DB_HOST     | Host de MySQL       | 136.113.227.213      |
+| DB_HOST     | Host de MySQL       | <DB_HOST>      |
 | DB_PORT     | Puerto de MySQL     | 3306                 |
-| DB_USER     | Usuario de MySQL    | signalinkUser        |
-| DB_PASSWORD | Contraseña de MySQL | U4d32025!            |
+| DB_USER     | Usuario de MySQL    | <DB_USER>        |
+| DB_PASSWORD | Contraseña de MySQL | <DB_PASSWORD>            |
 | DB_NAME     | Nombre de la base   | signalink            |
 | SECRET_KEY  | Clave secreta Flask | your-secret-key-here |
 | DEBUG       | Modo debug          | True                 |
@@ -401,4 +401,3 @@ Para preguntas sobre el proyecto, contactar al equipo de desarrollo de Signalink
 ## Contributing
 
 Feel free to submit issues or pull requests for improvements or bug fixes.
-
